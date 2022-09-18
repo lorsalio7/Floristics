@@ -1,4 +1,5 @@
 html {
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -9,7 +10,9 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-family: var(--serif);
+  background-color: rgb(var(--color-tamarind));
 }
 
 .no-scroll {

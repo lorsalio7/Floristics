@@ -10,8 +10,13 @@
   justify-content: space-between;
 }
 
+.header__logo {
+  margin-right: 21px;
+}
+
 .header__phone {
   font-size: 20px;
+  letter-spacing: 1.25px;
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(var(--color-white));
@@ -30,12 +35,14 @@
   padding-left: 0;
 }
 
-.site-navigation__item:not(:last-of-type) {
-  margin-right: 60px;
+.site-navigation__item {
+  margin-right: 29px;
+  margin-left: 29px;
 }
 
 .site-navigation__link {
   font-size: 20px;
+  letter-spacing: 1.25px;
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(var(--color-white));

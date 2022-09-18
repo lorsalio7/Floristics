@@ -2,6 +2,12 @@ extends ../layout/main-template.pug
 
 block vars
   - var pageTitle = "Весна всегда - цветочный магазин";
-  - var htmlClass = "page-html";
-  - var bodyClass = "page-body";
+  - var htmlClass = "";
+  - var bodyClass = "page";
   - var siteNavigation = [{linkName: "Услуги", linkUrl: "#"},{linkName: "Акции", linkUrl: "#"},{linkName: "Композиции", linkUrl: "#"},{linkName: "Подарочные карты", linkUrl: "#"},{linkName: "Наши партнёры", linkUrl: "#"}];
+  - var socials = [{linkUrl: "#", linkTitle: "Мы в Тик-Токе", linkIcon: "socials__link--tiktok"},{linkUrl: "#", linkTitle: "Мы в Одноклассниках", linkIcon: "socials__link--ok"},{linkUrl: "#", linkTitle: "Мы в Телеграм", linkIcon: "socials__link--telegram"},{linkUrl: "#", linkTitle: "Мы в Вконтакте", linkIcon: "socials__link--vk"}];
+
+block content
+  main.page__main
+    h1.visually-hidden Сайт цветочного магазина - Весна всегда
+    include ../includes/_hero.pug
