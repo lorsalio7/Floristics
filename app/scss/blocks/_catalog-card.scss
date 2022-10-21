@@ -1,0 +1,30 @@
+.catalog-card {
+  border: 1px solid rgba(var(--color-white) / 20%);
+  padding: 9px;
+}
+
+.catalog-card__title {
+  margin-bottom: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: rgba(var(--color-white) / 90%);
+}
+
+.catalog-card__link {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(var(--color-white));
+  transition: opacity 0.3s ease-in-out;
+}
+
+.catalog-card__link:hover,
+.catalog-card__link:focus {
+  opacity: 0.5;
+}

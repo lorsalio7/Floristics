@@ -1,0 +1,29 @@
+.catalog__title {
+  margin-bottom: 94px;
+}
+
+.catalog__list {
+  counter-reset: list-counter;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.catalog__item {
+  counter-increment: list-counter;
+  position: relative;
+  margin-bottom: 40px;
+  max-width: 350px;
+}
+
+.catalog__item::before {
+  content: "0" counter(list-counter) url("../img/counter-dash.svg");
+  position: absolute;
+  left: 33px;
+  top: 51px;
+  display: block;
+  width: auto;
+  height: 20px;
+  font-size: 20px;
+  color: rgb(var(--color-white));
+}
