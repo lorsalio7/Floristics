@@ -7,12 +7,16 @@ block vars
   - var siteNavigation = [{linkName: "Услуги", linkUrl: "#"},{linkName: "Акции", linkUrl: "#"},{linkName: "Композиции", linkUrl: "#"},{linkName: "Подарочные карты", linkUrl: "#"},{linkName: "Наши партнёры", linkUrl: "#"}];
   - var socials = [{linkUrl: "#", linkTitle: "Мы в Тик-Токе", linkIcon: "socials__link--tiktok"},{linkUrl: "#", linkTitle: "Мы в Одноклассниках", linkIcon: "socials__link--ok"},{linkUrl: "#", linkTitle: "Мы в Телеграм", linkIcon: "socials__link--telegram"},{linkUrl: "#", linkTitle: "Мы в Вконтакте", linkIcon: "socials__link--vk"}];
   - var catalogCards = [{imageSource: "img/wedding-bouquet", imageWidth: "330", imageHeight: "223", cardTitle: "Букет невесты и свадебное оформление", cardLink: "#"},{imageSource: "img/celebration-bouquet", imageWidth: "330", imageHeight: "610", cardTitle: "Букеты на торжества", cardLink: "#"},{imageSource: "img/compositions", imageWidth: "330", imageHeight: "370", cardTitle: "Композиции", cardLink: "#"},{imageSource: "img/event-design", imageWidth: "330", imageHeight: "146", cardTitle: "Оформление мероприятий", cardLink: "#"},{imageSource: "img/flower-delivery", imageWidth: "330", imageHeight: "245", cardTitle: "Доставка цветов", cardLink: "#"},{imageSource: "img/packaging-and-accessories", imageWidth: "330", imageHeight: "146", cardTitle: "Упаковка и аксессуары", cardLink: "#"},{imageSource: "img/photo-shoot-in-the-greenhouse", imageWidth: "330", imageHeight: "146", cardTitle: "Фотосессии в нашей оранжерее", cardLink: "#"},{imageSource: "img/floristry-courses", imageWidth: "330", imageHeight: "370", cardTitle: "Курсы по флористике", cardLink: "#"}];
+  - var compositionThumbs = [{big: "img/composition-1", thumb: "img/composition-1-thumb", thumbClass: "compositions__thumb compositions__thumb--active"},{big: "img/composition-2", thumb: "img/composition-2-thumb", thumbClass: "compositions__thumb"},{big: "img/composition-3", thumb: "img/composition-3-thumb", thumbClass: "compositions__thumb"},{big: "img/composition-4", thumb: "img/composition-4-thumb", thumbClass: "compositions__thumb"}];
 
 block content
   main.page__main
     h1.visually-hidden Сайт цветочного магазина - Весна всегда
     include ../includes/_hero.pug
     include ../includes/_catalog.pug
+    include ../includes/_offer.pug
+    include ../includes/_compositions.pug
+
 
 block prepend scripts
   script(src="js/masonry.pkgd.min.js")
