@@ -11,12 +11,21 @@
 }
 
 .header__logo {
-  margin-right: 21px;
+  flex: 1 1 16%;
+}
+
+.header__site-navigation {
+  display: flex;
+  flex: 1 1 66%;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__phone {
+  flex: 1 1 16%;
   font-size: 20px;
   letter-spacing: 1.25px;
+  text-align: right;
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(var(--color-white));
@@ -29,20 +38,22 @@
 
 .site-navigation__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding-left: 0;
+  max-width: 890px;
 }
 
-.site-navigation__item {
-  margin-right: 29px;
-  margin-left: 29px;
+.site-navigation__item:not(:last-of-type) {
+  margin-right: 60px;
 }
 
 .site-navigation__link {
   font-size: 20px;
-  letter-spacing: 1.25px;
+  letter-spacing: 0.06em;
   text-decoration: none;
   text-transform: uppercase;
   color: rgb(var(--color-white));

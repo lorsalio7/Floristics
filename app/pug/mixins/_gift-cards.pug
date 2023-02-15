@@ -1,0 +1,11 @@
+mixin giftCard(array)
+  each item in array
+    li.gift__item(class= item.cardAddClass)
+      .gift__card
+        img(src="img/logo.svg" width="135" height="44", alt="Логотип сайта - Весна всегда").logo__icon.gift__icon
+        p.gift__price= item.cardPrice
+        p.gift__number= item.cardNumber
+      .gift__text
+        p.gift__description= item.cardDescription
+        .gift__button
+          a(href= item.cardUrl).button Получить

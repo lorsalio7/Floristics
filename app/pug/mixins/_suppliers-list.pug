@@ -1,0 +1,7 @@
+mixin suppliers(array)
+  each item in array
+    li.suppliers__item
+      a(href= item.link).suppliers__link
+        picture.suppliers__picture
+          source(srcset= item.imageUrl+".webp" type="image/webp")
+          img(loading="lazy" src= item.imageUrl+".jpg" width= item.imageWidth height= item.imageHeight alt= item.imageName).suppliers__image

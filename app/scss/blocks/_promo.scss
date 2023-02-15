@@ -6,22 +6,24 @@
 
 .promo--reverse {
   flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 .promo__element-1 {
-  flex-shrink: 2;
-  margin-right: 74px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 73px;
   max-width: 400px;
 }
 
 .promo__title {
   position: relative;
   margin-top: 0;
-  margin-bottom: 58px;
+  margin-bottom: 56px;
   font-weight: 400;
   font-size: 50px;
   line-height: 1.1;
-  letter-spacing: 4.6px;
+  letter-spacing: 0.09em;
   text-align: left;
   text-transform: uppercase;
   color: rgb(var(--color-white));
@@ -49,8 +51,8 @@
 
 .promo__element-2 {
   position: relative;
-  flex-shrink: 1;
-  margin-right: 30px;
+  flex-grow: 0;
+  flex-shrink: 2;
   line-height: 0;
 }
 

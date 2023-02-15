@@ -1,0 +1,114 @@
+.gift__title {
+  margin-bottom: 67px;
+}
+
+.gift__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gift__item {
+  flex-basis: 348px;
+  margin: 15px;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 4px 50px rgba((var(--color-black)) / 40%);
+  background-color: rgb(var(--color-tamarind-dark));
+}
+
+.gift__item--big {
+  flex-basis: 420px;
+}
+
+.gift__card {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  min-height: 220px;
+  background-image: url("../img/gift-card-decor-top-left.svg"), url("../img/gift-card-decor-bottom-right.svg");
+  background-position: top 10px left 10px, bottom 10px right 10px;
+  background-repeat: no-repeat;
+  background-color: rgb(var(--color-woodsmoke));
+  transition: background-color 0.3s ease-in-out;
+}
+
+.gift__item--big .gift__card {
+  min-height: 264px;
+}
+
+.gift__item:hover .gift__card {
+  background-color: rgb(var(--color-charade));
+}
+
+.gift__icon {
+  align-self: center;
+  order: 2;
+  width: 198px;
+  height: 61px;
+}
+
+.gift__item--big .gift__icon {
+  width: 240px;
+  height: 74px;
+}
+
+.gift__price {
+  align-self: flex-start;
+  order: 1;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  font-size: 21px;
+  letter-spacing: 0.06em;
+  color: rgb(var(--color-white));
+}
+
+.gift__number {
+  align-self: flex-end;
+  order: 3;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 0;
+  font-size: 21px;
+  letter-spacing: 0.06em;
+  color: rgb(var(--color-white));
+}
+
+.gift__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 20px;
+  background-image: url("../img/gift-card-bg-decor.svg");
+  background-position: bottom 76px center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+
+.gift__item--big .gift__text {
+  padding: 99px 20px;
+}
+
+.gift__description {
+  margin-top: 0;
+  margin-bottom: 111px;
+  max-width: 282px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(var(--color-white));
+}
+
+.gift__item--big .gift__description {
+  margin-bottom: 128px;
+}
+
+.gift__button {
+  text-align: center;
+}

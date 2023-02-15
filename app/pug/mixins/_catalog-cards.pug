@@ -6,5 +6,6 @@ mixin catalog-cards(array)
           picture
             source(srcset= item.imageSource + ".webp" type="image/webp")
             img(loading="lazy" src= item.imageSource + ".jpg" width= item.imageWidth height= item.imageHeight alt= item.cardTitle).catalog-card__image
-        h3.catalog-card__title= item.cardTitle
-        a(href= item.cardLink).catalog-card__link смотреть
+        .catalog-card__description
+          h3.catalog-card__title= item.cardTitle
+          a(href= item.cardLink).catalog-card__link смотреть

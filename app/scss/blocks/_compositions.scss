@@ -1,21 +1,29 @@
 .compositions__element-1 {
   margin-right: 0;
-  margin-left: 84px;
-  max-width: 614px;
+  margin-left: 107px;
+  padding-top: 7px;
+  max-width: 620px;
+}
+
+.compositions__description {
+  margin-bottom: 32px;
+  line-height: 1.5;
 }
 
 .compositions__button {
-  margin-bottom: 100px;
+  display: inline-block;
+  margin-bottom: 99px;
 }
 
 .compositions__list {
   display: flex;
   list-style-type: none;
+  margin: 0;
   padding-left: 0;
 }
 
 .compositions__item:not(:last-of-type) {
-  margin-right: 23px;
+  margin-right: 14px;
 }
 
 .compositions__item {
@@ -25,7 +33,9 @@
 
 .compositions__thumb {
   display: inline-block;
-  padding: 4px;
+  border: 1px solid transparent;
+  padding: 2px;
+  box-sizing: content-box;
   cursor: pointer;
 }
 

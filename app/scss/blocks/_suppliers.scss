@@ -1,0 +1,22 @@
+.suppliers__title {
+  margin-bottom: 71px;
+}
+
+.suppliers__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1300px;
+}
+
+.suppliers__item {
+  margin: 17px;
+}
+
+.suppliers__link {
+  display: block;
+  line-height: 0;
+}

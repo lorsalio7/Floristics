@@ -1,5 +1,7 @@
-footer.footer This is footer change
-  ul.footer-list
-    li.footer-list__item li text
-    li.footer-list__item li text 2
-    li.footer-list__item li text 3
+footer.footer
+  .container
+    .footer__navigation
+      ul.footer-navigation
+        +footer-navigation(footerNavigation)
+    ul.socials.footer__socials
+      +socials(socials)
