@@ -11,16 +11,20 @@
   <body class="index-page">
     <header class="header">
       <div class="container header__container"><a class="logo header__logo"><img class="logo__icon" src="img/logo.svg" width="135" height="44" alt="Логотип сайта - Весна всегда"></a>
-        <nav class="site-navigation header__site-navigation">
-          <ul class="site-navigation__list">
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#">Услуги</a></li>
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#">Акции</a></li>
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#">Композиции</a></li>
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#">Подарочные карты</a></li>
-            <li class="site-navigation__item"><a class="site-navigation__link" href="#">Наши партнёры</a></li>
-          </ul>
-        </nav><a class="header__phone" href="tel:+79163921777">+7 (916) 392 17 77</a>
-      </div>
+        <div class="mobile-menu">
+          <nav class="site-navigation header__site-navigation">
+            <ul class="site-navigation__list">
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Услуги</a></li>
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Акции</a></li>
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Композиции</a></li>
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Подарочные карты</a></li>
+              <li class="site-navigation__item"><a class="site-navigation__link" href="#">Наши партнёры</a></li>
+            </ul>
+          </nav>
+          <div class="header__phone"><a class="header-phone" href="tel:+79163921777">+7 (916) 392 17 77</a></div>
+        </div>
+        <button class="burger-button" type="button" aria-label="Открыть меню"><span class="burger-button__line"></span></button>
+      </div><span class="header__overlay"></span>
     </header>
     <main class="index-page__main">
       <h1 class="visually-hidden">Сайт цветочного магазина - Весна всегда</h1>
@@ -34,10 +38,10 @@
             <li class="socials__item"><a class="socials__link socials__link--ok" href="#" title="Мы в Одноклассниках"></a></li>
             <li class="socials__item"><a class="socials__link socials__link--telegram" href="#" title="Мы в Телеграм"></a></li>
             <li class="socials__item"><a class="socials__link socials__link--vk" href="#" title="Мы в Вконтакте"></a></li>
-          </ul><a class="hero__link" href="#">смотреть каталог</a>
+          </ul><a class="hero__link" href="#catalog">смотреть каталог</a>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog index-page__catalog" id="catalog">
         <div class="container">
           <h2 class="section-title catalog__title" data-title="Каталог услуг">Каталог услуг</h2>
           <ol class="catalog__list">

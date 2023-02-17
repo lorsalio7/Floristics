@@ -1,0 +1,75 @@
+.burger-button {
+  position: relative;
+  z-index: 150;
+  display: none;
+  border: none;
+  width: 42px;
+  height: 42px;
+  box-sizing: border-box;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include px1024 {
+    display: block;
+  }
+}
+
+.burger-button__line {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: block;
+  width: 34px;
+  height: 2px;
+  background-color: rgb(var(--color-white));
+  transform: translate(-50%, -50%);
+  transition: background-color var(--timing) ease;
+}
+
+.burger-button__line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -13px;
+  display: block;
+  width: 34px;
+  height: 2px;
+  background-color: rgb(var(--color-white));
+  transition:
+    top var(--timing) var(--timing) ease,
+    transform var(--timing) ease;
+}
+
+.burger-button__line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  display: block;
+  width: 34px;
+  height: 2px;
+  background-color: rgb(var(--color-white));
+  transition:
+    top var(--timing) var(--timing) ease,
+    transform var(--timing) ease;
+}
+
+.burger-button--active .burger-button__line {
+  background-color: transparent;
+}
+
+.burger-button--active .burger-button__line::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition:
+    top var(--timing) ease,
+    transform var(--timing) var(--timing) ease;
+}
+
+.burger-button--active .burger-button__line::after {
+  top: 0;
+  transform: rotate(-45deg);
+  transition:
+    top var(--timing) ease,
+    transform var(--timing) var(--timing) ease;
+}

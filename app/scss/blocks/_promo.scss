@@ -2,6 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include px768 {
+    flex-direction: column;
+  }
 }
 
 .promo--reverse {
@@ -14,6 +18,26 @@
   flex-shrink: 0;
   margin-right: 73px;
   max-width: 400px;
+
+  @include px1024 {
+    flex-grow: 1;
+    flex-shrink: 2;
+    margin-right: 30px;
+  }
+
+  @include px768 {
+    margin-right: 0;
+    margin-bottom: 40px;
+    max-width: 90%;
+  }
+
+  @include px768 {
+    max-width: 96%;
+  }
+
+  @include px450 {
+    max-width: 100%;
+  }
 }
 
 .promo__title {
@@ -27,6 +51,14 @@
   text-align: left;
   text-transform: uppercase;
   color: rgb(var(--color-white));
+
+  @include px1024 {
+    font-size: 40px;
+  }
+
+  @include px375 {
+    font-size: 34px;
+  }
 }
 
 .promo__title::before {
@@ -52,8 +84,13 @@
 .promo__element-2 {
   position: relative;
   flex-grow: 0;
-  flex-shrink: 2;
+  flex-shrink: 1;
+  margin-right: 20px;
   line-height: 0;
+
+  @include px1024 {
+    flex-grow: 1;
+  }
 }
 
 .promo__element-2::before {

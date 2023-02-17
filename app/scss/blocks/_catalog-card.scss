@@ -3,6 +3,13 @@
   padding: 9px;
 }
 
+.catalog-card__image {
+  @include px450 {
+    height: auto;
+    object-fit: contain;
+  }
+}
+
 .catalog-card__description {
   display: flex;
   flex-direction: column;

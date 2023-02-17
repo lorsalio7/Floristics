@@ -37,4 +37,34 @@
   color: rgb(var(--color-white));
   opacity: 0.03;
   transform: translateX(7px);
+
+  @include px1500 {
+    font-size: 150px;
+    line-height: 160px;
+  }
+
+  @include px1024 {
+    bottom: -128px;
+    font-size: 100px;
+    line-height: 110px;
+  }
+
+  @include px768 {
+    bottom: -112px;
+    font-size: 70px;
+    line-height: 80px;
+  }
+
+  @include px600 {
+    bottom: -100px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  @include px450 {
+    bottom: -96px;
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: 0.03em;
+  }
 }

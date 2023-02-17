@@ -1,3 +1,36 @@
+.index-page__main {
+  z-index: 5;
+  margin-top: -242px;
+}
+
+.index-page__hero {
+  margin-bottom: 135px;
+
+  @include px1500 {
+    margin-bottom: 100px;
+  }
+
+  @include px600 {
+    margin-bottom: 70px;
+  }
+}
+
+.index-page__catalog {
+  margin-bottom: 212px;
+
+  @include px1024 {
+    margin-bottom: 120px;
+  }
+
+  @include px768 {
+    margin-bottom: 100px;
+  }
+
+  @include px450 {
+    margin-bottom: 70px;
+  }
+}
+
 .index-page__compositions {
   margin-bottom: 246px;
 }

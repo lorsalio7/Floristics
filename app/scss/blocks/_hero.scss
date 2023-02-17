@@ -49,6 +49,18 @@
   margin-bottom: 57px;
   padding-bottom: 157px;
   text-align: center;
+
+  @include px600 {
+    margin-top: 48px;
+  }
+
+  @include px450 {
+    padding-bottom: 200px;
+  }
+
+  @include px375 {
+    padding-bottom: 150px;
+  }
 }
 
 .hero__title {
@@ -63,6 +75,29 @@
   text-align: center;
   text-transform: uppercase;
   color: rgb(var(--color-white));
+
+  @include px1024 {
+    padding-left: 0;
+    font-size: 90px;
+  }
+
+  @include px768 {
+    font-size: 70px;
+  }
+
+  @include px600 {
+    margin-bottom: 40px;
+    font-size: 50px;
+  }
+
+  @include px450 {
+    font-size: 40px;
+  }
+
+  @include px375 {
+    font-size: 38px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .hero__socials {
@@ -79,6 +114,11 @@
   text-decoration: none;
   writing-mode: vertical-rl;
   color: rgb(var(--color-white));
+
+  @include px450 {
+    padding-bottom: 40px;
+    font-size: 16px;
+  }
 }
 
 .hero__link::after {
