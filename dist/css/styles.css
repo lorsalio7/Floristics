@@ -1209,11 +1209,9 @@ img {
   height: 100%;
 }
 
-.offer {
-  padding-bottom: 268px;
-}
-
 .compositions__element-1 {
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
   margin-right: 0;
   margin-left: 107px;
   padding-top: 7px;
@@ -1234,6 +1232,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding-left: 0;
@@ -1241,11 +1241,14 @@ img {
 
 .compositions__item:not(:last-of-type) {
   margin-right: 14px;
+  margin-bottom: 14px;
 }
 
 .compositions__item {
   padding: 0;
   line-height: 0;
+  width: 123px;
+  height: 123px;
 }
 
 .compositions__thumb {
@@ -1255,6 +1258,7 @@ img {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   cursor: pointer;
+  height: 100%;
 }
 
 .compositions__thumb--active {
@@ -1426,6 +1430,10 @@ img {
   margin-bottom: 212px;
 }
 
+.index-page__offer {
+  margin-bottom: 268px;
+}
+
 .index-page__compositions {
   margin-bottom: 246px;
 }
@@ -1517,20 +1525,33 @@ img {
     line-height: 160px;
   }
 
+  .compositions__element-1 {
+    -ms-flex-negative: 1.6;
+        flex-shrink: 1.6;
+    margin-left: 40px;
+  }
+
+  .compositions__button {
+    margin-bottom: 50px;
+  }
+
+  .compositions__item {
+    width: 100px;
+    height: 100px;
+  }
+
+  .compositions__thumb {
+    display: block;
+  }
+
   .index-page__hero {
     margin-bottom: 100px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1124px) {
   .header {
     padding: 50px 0;
-  }
-
-  .header__container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 
   .mobile-menu {
@@ -1598,17 +1619,29 @@ img {
     line-height: 110px;
   }
 
+  .promo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    max-width: 750px;
+  }
+
   .promo__element-1 {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -ms-flex-negative: 2;
-        flex-shrink: 2;
-    margin-right: 30px;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    margin-right: 0;
+    margin-bottom: 70px;
+    max-width: 100%;
   }
 
   .promo__title {
     font-size: 40px;
+  }
+
+  .promo__button {
+    text-align: center;
   }
 
   .promo__element-2 {
@@ -1617,8 +1650,33 @@ img {
             flex-grow: 1;
   }
 
+  .compositions__element-1 {
+    margin-bottom: 20px;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .compositions__button {
+    display: block;
+    text-align: center;
+  }
+
+  .compositions__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .index-page__catalog {
     margin-bottom: 120px;
+  }
+
+  .index-page__offer {
+    margin-bottom: 140px;
+  }
+
+  .index-page__compositions {
+    margin-bottom: 140px;
   }
 }
 
@@ -1631,23 +1689,6 @@ img {
     bottom: -112px;
     font-size: 70px;
     line-height: 80px;
-  }
-
-  .promo {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .promo__element-1 {
-    margin-right: 0;
-    margin-bottom: 40px;
-    max-width: 90%;
-  }
-
-  .promo__element-1 {
-    max-width: 96%;
   }
 
   .index-page__catalog {
@@ -1669,6 +1710,17 @@ img {
     bottom: -100px;
     font-size: 50px;
     line-height: 60px;
+  }
+
+  .compositions__item:not(:last-of-type) {
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+
+  .compositions__item {
+    margin: 4px;
+    width: 80px;
+    height: 80px;
   }
 
   .index-page__hero {
@@ -1718,8 +1770,13 @@ img {
        object-fit: contain;
   }
 
-  .promo__element-1 {
-    max-width: 100%;
+  .promo__title {
+    font-size: 36px;
+  }
+
+  .compositions__item {
+    width: 70px;
+    height: 70px;
   }
 
   .index-page__catalog {
@@ -1735,9 +1792,5 @@ img {
   .hero__title {
     font-size: 38px;
     letter-spacing: 0.03em;
-  }
-
-  .promo__title {
-    font-size: 34px;
   }
 }

@@ -76,7 +76,7 @@
   text-transform: uppercase;
   color: rgb(var(--color-white));
 
-  @include px1024 {
+  @include px1124 {
     padding-left: 0;
     font-size: 90px;
   }

@@ -3,7 +3,7 @@
   z-index: 10;
   padding: 87px 0;
 
-  @include px1024 {
+  @include px1124 {
     padding: 50px 0;
   }
 
@@ -16,10 +16,6 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-
-  @include px1024 {
-    align-items: center;
-  }
 }
 
 .header__logo {
@@ -32,7 +28,7 @@
   align-items: center;
   justify-content: space-between;
 
-  @include px1024 {
+  @include px1124 {
     position: fixed;
     right: 0;
     top: 0;
@@ -51,7 +47,7 @@
 }
 
 .mobile-menu--active {
-  @include px1024 {
+  @include px1124 {
     transform: translateX(0);
   }
 }
@@ -111,7 +107,7 @@
     justify-content: center;
   }
 
-  @include px1024 {
+  @include px1124 {
     flex-direction: column;
   }
 }
@@ -119,7 +115,7 @@
 .site-navigation__item {
   margin-top: 10px;
 
-  @include px1024 {
+  @include px1124 {
     margin-top: 0;
     margin-bottom: 15px;
   }
@@ -132,7 +128,7 @@
     margin-right: 40px;
   }
 
-  @include px1024 {
+  @include px1124 {
     margin-right: 0;
   }
 }

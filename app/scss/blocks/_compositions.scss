@@ -1,8 +1,20 @@
 .compositions__element-1 {
+  flex-shrink: 2;
   margin-right: 0;
   margin-left: 107px;
   padding-top: 7px;
   max-width: 620px;
+
+  @include px1500 {
+    flex-shrink: 1.6;
+    margin-left: 40px;
+  }
+
+  @include px1124 {
+    margin-bottom: 20px;
+    margin-left: 0;
+    max-width: 100%;
+  }
 }
 
 .compositions__description {
@@ -13,22 +25,60 @@
 .compositions__button {
   display: inline-block;
   margin-bottom: 99px;
+
+  @include px1500 {
+    margin-bottom: 50px;
+  }
+
+  @include px1124 {
+    display: block;
+    text-align: center;
+  }
 }
 
 .compositions__list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding-left: 0;
+
+  @include px1124 {
+    justify-content: center;
+  }
 }
 
 .compositions__item:not(:last-of-type) {
   margin-right: 14px;
+  margin-bottom: 14px;
+
+  @include px600 {
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
 }
 
 .compositions__item {
   padding: 0;
   line-height: 0;
+  width: 123px;
+  height: 123px;
+
+  @include px1500 {
+    width: 100px;
+    height: 100px;
+  }
+
+  @include px600 {
+    margin: 4px;
+    width: 80px;
+    height: 80px;
+  }
+
+  @include px450 {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .compositions__thumb {
@@ -37,6 +87,13 @@
   padding: 2px;
   box-sizing: content-box;
   cursor: pointer;
+  height: 100%;
+
+  @include px1500 {
+    display: block;
+  }
+
+
 }
 
 .compositions__thumb--active {

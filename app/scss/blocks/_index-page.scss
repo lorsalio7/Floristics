@@ -18,7 +18,7 @@
 .index-page__catalog {
   margin-bottom: 212px;
 
-  @include px1024 {
+  @include px1124 {
     margin-bottom: 120px;
   }
 
@@ -31,8 +31,20 @@
   }
 }
 
+.index-page__offer {
+  margin-bottom: 268px;
+
+  @include px1124 {
+    margin-bottom: 140px;
+  }
+}
+
 .index-page__compositions {
   margin-bottom: 246px;
+
+  @include px1124 {
+    margin-bottom: 140px;
+  }
 }
 
 .index-page__gift {
