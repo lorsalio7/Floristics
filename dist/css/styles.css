@@ -1547,6 +1547,17 @@ img {
   .index-page__hero {
     margin-bottom: 100px;
   }
+
+  .suppliers__list {
+    max-width: 1200px;
+  }
+
+  .suppliers__image {
+    width: 268px;
+    height: 90px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 @media (max-width: 1124px) {
@@ -1710,6 +1721,10 @@ img {
   }
 
   .index-page__gift {
+    margin-bottom: 140px;
+  }
+
+  .index-page__suppliers {
     margin-bottom: 140px;
   }
 }
@@ -1881,5 +1896,9 @@ img {
 
   .gift__item--big .gift__description {
     margin-bottom: 100px;
+  }
+
+  .suppliers__item {
+    margin: 10px 0;
   }
 }

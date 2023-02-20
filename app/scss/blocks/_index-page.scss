@@ -57,4 +57,8 @@
 
 .index-page__suppliers {
   margin-bottom: 178px;
+
+  @include px1124 {
+    margin-bottom: 140px;
+  }
 }
