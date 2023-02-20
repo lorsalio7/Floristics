@@ -9,6 +9,11 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @include px1124 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .gift__item {
@@ -17,6 +22,14 @@
   border-radius: 8px 8px 0 0;
   box-shadow: 0 4px 50px rgba((var(--color-black)) / 40%);
   background-color: rgb(var(--color-tamarind-dark));
+
+  @include px1124 {
+    flex-basis: 420px;
+  }
+
+  @include px450 {
+    margin: 15px 0;
+  }
 }
 
 .gift__item--big {
@@ -35,10 +48,31 @@
   background-repeat: no-repeat;
   background-color: rgb(var(--color-woodsmoke));
   transition: background-color 0.3s ease-in-out;
+
+  @include px1124 {
+    min-height: 264px;
+  }
+
+  @include px450 {
+    min-height: 246px;
+  }
+
+  @include px375 {
+    min-height: 210px;
+    background-size: 100px;
+  }
 }
 
 .gift__item--big .gift__card {
   min-height: 264px;
+
+  @include px450 {
+    min-height: 246px;
+  }
+
+  @include px375 {
+    min-height: 210px;
+  }
 }
 
 .gift__item:hover .gift__card {
@@ -50,11 +84,26 @@
   order: 2;
   width: 198px;
   height: 61px;
+
+  @include px1124 {
+    width: 240px;
+    height: 74px;
+  }
+
+  @include px375 {
+    width: 198px;
+    height: 61px;
+  }
 }
 
 .gift__item--big .gift__icon {
   width: 240px;
   height: 74px;
+
+  @include px375 {
+    width: 198px;
+    height: 61px;
+  }
 }
 
 .gift__price {
@@ -89,10 +138,30 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-origin: content-box;
+
+  @include px1124 {
+    padding: 99px 20px;
+  }
+
+  @include px450 {
+    padding: 50px 20px;
+  }
+
+  @include px375 {
+    padding: 40px 20px;
+  }
 }
 
 .gift__item--big .gift__text {
   padding: 99px 20px;
+
+  @include px450 {
+    padding: 50px 20px;
+  }
+
+  @include px375 {
+    padding: 40px 20px;
+  }
 }
 
 .gift__description {
@@ -103,10 +172,22 @@
   line-height: 1.5;
   text-align: center;
   color: rgb(var(--color-white));
+
+  @include px1124 {
+    margin-bottom: 128px;
+  }
+
+  @include px375 {
+    margin-bottom: 100px;
+  }
 }
 
 .gift__item--big .gift__description {
   margin-bottom: 128px;
+
+  @include px375 {
+    margin-bottom: 100px;
+  }
 }
 
 .gift__button {

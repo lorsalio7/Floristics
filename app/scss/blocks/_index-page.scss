@@ -49,6 +49,10 @@
 
 .index-page__gift {
   margin-bottom: 256px;
+
+  @include px1124 {
+    margin-bottom: 140px;
+  }
 }
 
 .index-page__suppliers {
