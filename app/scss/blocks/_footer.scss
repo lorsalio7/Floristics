@@ -12,10 +12,18 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @include px1500 {
+    flex-wrap: wrap;
+  }
 }
 
 .footer-navigation__item {
   margin: 20px 25px;
+
+  @include px450 {
+    margin: 14px 20px;
+  }
 }
 
 .footer-navigation__link {
@@ -23,6 +31,11 @@
   line-height: 18px;
   text-decoration: none;
   color: rgba(var(--color-white) / 50%);
+}
+
+.footer-navigation__link:hover,
+.footer-navigation__link:focus {
+  text-decoration: underline;
 }
 
 .footer__socials {
