@@ -4,11 +4,7 @@
 }
 
 .index-page__hero {
-  margin-bottom: 135px;
-
-  @include px1500 {
-    margin-bottom: 100px;
-  }
+  margin-bottom: 100px;
 
   @include px600 {
     margin-bottom: 70px;
@@ -16,7 +12,8 @@
 }
 
 .index-page__catalog {
-  margin-bottom: 212px;
+  margin-bottom: 177px;
+  padding-top: 35px;
 
   @include px1124 {
     margin-bottom: 120px;
@@ -32,7 +29,8 @@
 }
 
 .index-page__offer {
-  margin-bottom: 268px;
+  margin-bottom: 233px;
+  padding-top: 35px;
 
   @include px1124 {
     margin-bottom: 140px;
@@ -40,7 +38,8 @@
 }
 
 .index-page__compositions {
-  margin-bottom: 246px;
+  margin-bottom: 211px;
+  padding-top: 35px;
 
   @include px1124 {
     margin-bottom: 140px;
@@ -48,7 +47,8 @@
 }
 
 .index-page__gift {
-  margin-bottom: 256px;
+  margin-bottom: 221px;
+  padding-top: 35px;
 
   @include px1124 {
     margin-bottom: 140px;
@@ -57,6 +57,7 @@
 
 .index-page__suppliers {
   margin-bottom: 178px;
+  padding-top: 35px;
 
   @include px1124 {
     margin-bottom: 140px;

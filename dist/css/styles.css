@@ -1423,27 +1423,32 @@ img {
 }
 
 .index-page__hero {
-  margin-bottom: 135px;
+  margin-bottom: 100px;
 }
 
 .index-page__catalog {
-  margin-bottom: 212px;
+  margin-bottom: 177px;
+  padding-top: 35px;
 }
 
 .index-page__offer {
-  margin-bottom: 268px;
+  margin-bottom: 233px;
+  padding-top: 35px;
 }
 
 .index-page__compositions {
-  margin-bottom: 246px;
+  margin-bottom: 211px;
+  padding-top: 35px;
 }
 
 .index-page__gift {
-  margin-bottom: 256px;
+  margin-bottom: 221px;
+  padding-top: 35px;
 }
 
 .index-page__suppliers {
   margin-bottom: 178px;
+  padding-top: 35px;
 }
 
 .suppliers__title {
@@ -1547,10 +1552,6 @@ img {
 
   .compositions__thumb {
     display: block;
-  }
-
-  .index-page__hero {
-    margin-bottom: 100px;
   }
 
   .suppliers__list {

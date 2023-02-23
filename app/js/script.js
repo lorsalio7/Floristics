@@ -23,9 +23,9 @@ if(elem) {
 
   activeMasonry(mobileWidth.matches);
 
-  mobileWidth.addEventListener("change", (e) => {
+  mobileWidth.onchange = (e) => {
     activeMasonry(e.matches);
-  })
+  }
 }
 
 // -----------------------------------------------------------
@@ -34,55 +34,93 @@ const compositionThumbs = document.querySelectorAll(".compositions__thumb");
 const compositionBigImageWebp = document.querySelector(".compositions__picture source");
 const compositionBigImageJpg = document.querySelector(".compositions__picture img");
 
+if(compositionThumbs) {
+  compositionThumbs.forEach(item => {
+    item.addEventListener("click", (e) => {
+      let target = e.target;
+      removeActiveClass(compositionThumbs, "compositions__thumb--active");
+      target.classList.add("compositions__thumb--active");
+      let imageSource = target.dataset.fullImage;
 
-compositionThumbs.forEach(item => {
-  item.addEventListener("click", (e) => {
-    let target = e.target;
-    removeActiveClass(compositionThumbs, "compositions__thumb--active");
-    target.classList.add("compositions__thumb--active");
-    let imageSource = target.dataset.fullImage;
-
-    compositionBigImageWebp.srcset = imageSource + ".webp";
-    compositionBigImageJpg.src = imageSource + ".jpg";
+      compositionBigImageWebp.srcset = imageSource + ".webp";
+      compositionBigImageJpg.src = imageSource + ".jpg";
+    })
   })
-})
 
-function removeActiveClass(items, activeClass) {
-  for(let i = 0; i < items.length; i++) {
-    items[i].classList.remove(activeClass);
+  function removeActiveClass(items, activeClass) {
+    for(let i = 0; i < items.length; i++) {
+      items[i].classList.remove(activeClass);
+    }
   }
 }
+
 
 // -----------------------------------------------------------
 
 const burgerButton = document.querySelector(".burger-button");
 
-burgerButton.addEventListener("click", () => {
-  burgerButton.classList.toggle("burger-button--active");
 
-  if(burgerButton.classList.contains("burger-button--active")) {
-    openSiteMenu();
-  } else {
-    closeSiteMenu();
+if(burgerButton) {
+  burgerButton.addEventListener("click", () => {
+    burgerButton.classList.toggle("burger-button--active");
+
+    if(burgerButton.classList.contains("burger-button--active")) {
+      openSiteMenu();
+    } else {
+      closeSiteMenu();
+    }
+  });
+
+
+
+  let siteMenu = document.querySelector(".mobile-menu");
+  let overlay = document.querySelector(".header__overlay");
+  let pageHtml = document.querySelector("html");
+  let burgerMenuWidth = window.matchMedia("(max-width: 1124px)");
+  let siteNavigationLinks = siteMenu.querySelectorAll(".site-navigation__link");
+
+
+
+  function openSiteMenu() {
+    pageHtml.classList.add("no-scroll");
+    siteMenu.classList.add("mobile-menu--active");
+    overlay.classList.add("header__overlay--active");
+
+    if(overlay.classList.contains("header__overlay--active")) {
+      overlay.addEventListener("click", closeSiteMenu);
+    }
+
+    if(siteMenu.classList.contains("mobile-menu--active")) {
+      siteNavigationLinks.forEach(item => {
+        item.addEventListener("click", closeSiteMenu);
+      })
+    }
+
   }
-});
 
-function openSiteMenu() {
-  let siteMenu = document.querySelector(".mobile-menu");
-  let overlay = document.querySelector(".header__overlay");
-  let pageHtml = document.querySelector("html");
+  function closeSiteMenu() {
+    burgerButton.classList.remove("burger-button--active");
+    pageHtml.classList.remove("no-scroll");
+    siteMenu.classList.remove("mobile-menu--active");
+    overlay.classList.remove("header__overlay--active");
+  }
 
-  pageHtml.classList.add("no-scroll");
-  siteMenu.classList.add("mobile-menu--active");
-  overlay.classList.add("header__overlay--active");
+  document.addEventListener("keydown", (e) => {
+    if(siteMenu.classList.contains("mobile-menu--active") && e.keyCode === 27) {
+      closeSiteMenu();
+    }
+  })
+
+  function changeMenuView(width) {
+    if(!width) {
+      closeSiteMenu();
+    }
+  }
+
+  burgerMenuWidth.onchange = (e) => {
+    changeMenuView(e.matches);
+  }
+
+
 }
 
-function closeSiteMenu() {
-  let siteMenu = document.querySelector(".mobile-menu");
-  let overlay = document.querySelector(".header__overlay");
-  let pageHtml = document.querySelector("html");
-
-  pageHtml.classList.remove("no-scroll");
-  siteMenu.classList.remove("mobile-menu--active");
-  overlay.classList.remove("header__overlay--active");
-}
