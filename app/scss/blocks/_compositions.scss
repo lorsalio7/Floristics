@@ -60,9 +60,9 @@
 
 .compositions__item {
   padding: 0;
-  line-height: 0;
   width: 123px;
   height: 123px;
+  line-height: 0;
 
   @include px1500 {
     width: 100px;
@@ -85,15 +85,13 @@
   display: inline-block;
   border: 1px solid transparent;
   padding: 2px;
+  height: 100%;
   box-sizing: content-box;
   cursor: pointer;
-  height: 100%;
 
   @include px1500 {
     display: block;
   }
-
-
 }
 
 .compositions__thumb--active {

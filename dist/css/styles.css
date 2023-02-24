@@ -1246,19 +1246,19 @@ img {
 
 .compositions__item {
   padding: 0;
-  line-height: 0;
   width: 123px;
   height: 123px;
+  line-height: 0;
 }
 
 .compositions__thumb {
   display: inline-block;
   border: 1px solid transparent;
   padding: 2px;
+  height: 100%;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   cursor: pointer;
-  height: 100%;
 }
 
 .compositions__thumb--active {
