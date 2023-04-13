@@ -115,6 +115,12 @@
   writing-mode: vertical-rl;
   color: rgb(var(--color-white));
 
+  @include hover-focus {
+    &::after {
+      transform: translate(-50%, -10px);
+    }
+  }
+
   @include px450 {
     padding-bottom: 40px;
     font-size: 16px;
@@ -134,9 +140,4 @@
   background-repeat: no-repeat;
   transform: translate(-50%, 0);
   transition: transform 0.3s ease-in-out;
-}
-
-.hero__link:hover::after,
-.hero__link:focus::after {
-  transform: translate(-50%, -10px);
 }

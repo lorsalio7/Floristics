@@ -37,9 +37,8 @@
   text-transform: uppercase;
   color: rgb(var(--color-white));
   transition: opacity 0.3s ease-in-out;
-}
 
-.catalog-card__link:hover,
-.catalog-card__link:focus {
-  opacity: 0.5;
+  @include hover-focus {
+    opacity: 0.5;
+  }
 }

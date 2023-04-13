@@ -36,11 +36,10 @@
   background-position: center;
   background-repeat: no-repeat;
   transition: opacity 0.3s ease;
-}
 
-.socials__link:hover,
-.socials__link:focus {
-  opacity: 0.6;
+  @include hover-focus {
+    opacity: 0.6;
+  }
 }
 
 .socials__link--tiktok {

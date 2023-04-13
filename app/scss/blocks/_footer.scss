@@ -31,11 +31,10 @@
   line-height: 18px;
   text-decoration: none;
   color: rgba(var(--color-white) / 50%);
-}
 
-.footer-navigation__link:hover,
-.footer-navigation__link:focus {
-  text-decoration: underline;
+  @include hover-focus {
+    text-decoration: underline;
+  }
 }
 
 .footer__socials {
