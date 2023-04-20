@@ -453,9 +453,21 @@ img {
 }
 
 .header {
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
   padding: 87px 0;
+  -webkit-transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.header--active {
+  border-bottom: 1px solid rgba(var(--color-white)/20%);
+  padding: 30px 0;
+  background-color: rgb(var(--color-tamarind-dark));
 }
 
 .header__container {
@@ -691,7 +703,7 @@ img {
 }
 
 .logo__icon {
-  display: inline-block;
+  display: block;
   width: 135px;
   height: 44px;
 }
@@ -1292,10 +1304,6 @@ img {
   min-height: 264px;
 }
 
-.gift__item:hover .gift__card {
-  background-color: rgb(var(--color-charade));
-}
-
 .gift__icon {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1383,7 +1391,7 @@ img {
 
 .index-page__main {
   z-index: 5;
-  margin-top: -242px;
+  padding-top: -242px;
 }
 
 .index-page__hero {
@@ -1532,7 +1540,7 @@ img {
 
 @media (max-width: 1124px) {
   .header {
-    padding: 50px 0;
+    padding: 30px 0;
   }
 
   .mobile-menu {
@@ -1548,7 +1556,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    overflow-y: scroll;
+    overflow: auto;
     padding: 84px 30px 20px;
     height: 100vh;
     min-width: 50%;
@@ -1700,6 +1708,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  .mobile-menu {
+    min-width: 60%;
+  }
+
   .hero__title {
     font-size: 70px;
   }
@@ -1716,6 +1728,10 @@ img {
 }
 
 @media (max-width: 600px) {
+  .mobile-menu {
+    min-width: 70%;
+  }
+
   .hero__main-content {
     margin-top: 48px;
   }
@@ -1753,7 +1769,7 @@ img {
 
 @media (max-width: 450px) {
   .header {
-    padding: 38px 0;
+    padding: 20px 0;
   }
 
   .hero__main-content {
@@ -1832,6 +1848,10 @@ img {
 }
 
 @media (max-width: 375px) {
+  .mobile-menu {
+    min-width: 80%;
+  }
+
   .hero__main-content {
     padding-bottom: 150px;
   }
@@ -1940,6 +1960,10 @@ img {
 
   .catalog-card__link:hover {
     opacity: 0.5;
+  }
+
+  .gift__item:hover > .gift__card {
+    background-color: rgb(var(--color-charade));
   }
 
   .footer-navigation__link:focus {

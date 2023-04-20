@@ -1,5 +1,21 @@
+var scroll = new SmoothScroll(".site-navigation__link",  {
+  header: ".header"
+});
+
 var elem = document.querySelector('.catalog__list');
 let mobileWidth = window.matchMedia("(max-width: 450px)");
+
+let siteHeader = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+  let offsetTop = window.pageYOffset;
+
+  if(offsetTop > 0) {
+    siteHeader.classList.add("header--active");
+  } else {
+    siteHeader.classList.remove("header--active");
+  }
+})
 
 if(elem) {
 
@@ -82,9 +98,12 @@ if(burgerButton) {
 
 
   function openSiteMenu() {
+    let widthScroll = window.innerWidth - document.body.offsetWidth + "px";
     pageHtml.classList.add("no-scroll");
+    burgerButton.style.marginRight = widthScroll;
     siteMenu.classList.add("mobile-menu--active");
     overlay.classList.add("header__overlay--active");
+    document.body.style.paddingRight = widthScroll;
 
     if(overlay.classList.contains("header__overlay--active")) {
       overlay.addEventListener("click", closeSiteMenu);
@@ -103,6 +122,8 @@ if(burgerButton) {
     pageHtml.classList.remove("no-scroll");
     siteMenu.classList.remove("mobile-menu--active");
     overlay.classList.remove("header__overlay--active");
+    document.body.style.paddingRight = 0;
+    burgerButton.style.marginRight = 0;
   }
 
   document.addEventListener("keydown", (e) => {

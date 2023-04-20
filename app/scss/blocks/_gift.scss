@@ -23,6 +23,12 @@
   box-shadow: 0 4px 50px rgba((var(--color-black)) / 40%);
   background-color: rgb(var(--color-tamarind-dark));
 
+  @include hover {
+    > .gift__card {
+      background-color: rgb(var(--color-charade));
+    }
+  }
+
   @include px1124 {
     flex-basis: 420px;
   }
@@ -73,10 +79,6 @@
   @include px375 {
     min-height: 210px;
   }
-}
-
-.gift__item:hover .gift__card {
-  background-color: rgb(var(--color-charade));
 }
 
 .gift__icon {
