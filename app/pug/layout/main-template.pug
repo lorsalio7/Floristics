@@ -24,6 +24,7 @@ html(lang="ru" class= htmlClass)
     title= pageTitle
     link(rel="shortcut icon" href="img/favicon.ico")
     block styles
+      link(rel="preload", href="fonts/ForumRegular.woff2" as="font" type="font/woff2" crossorigin)
       link(rel="stylesheet", href="css/styles.min.css")
   body(class= bodyClass)
     include ../includes/_header.pug
