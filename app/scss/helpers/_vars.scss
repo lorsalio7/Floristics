@@ -1,10 +1,16 @@
 :root {
   --serif: "Forum", serif;
   --timing: 0.3s;
-  --color-white: 255 255 255;
-  --color-black: 0 0 0;
-  --color-tamarind: 59 24 30;  /* #3B181E */
-  --color-tamarind-dark: 40 16 20;  /* #281014 */
-  --color-woodsmoke: 10 10 14;  /* #0A0A0E */
-  --color-charade: 38 40 53; /* #262835 */
+  --color-white: rgb(255, 255, 255);
+  --color-white-90: rgba(255, 255, 255, 90%);
+  --color-white-50: rgba(255, 255, 255, 50%);
+  --color-white-20: rgba(255, 255, 255, 20%);
+  --color-black: rgb(0, 0, 0);
+  --color-black-50: rgba(0, 0, 0, 50%);
+  --color-black-40: rgba(0, 0, 0, 40%);
+  --color-tamarind: rgb(59, 24, 30);  /* #3B181E */
+  --color-tamarind-dark: rgb(40, 16, 20);  /* #281014 */
+  --color-woodsmoke: rgb(10, 10, 14);  /* #0A0A0E */
+  --color-charade: rgb(38, 40, 53); /* #262835 */
+  --color-outline: rgb(0, 187, 255);
 }

@@ -74,7 +74,7 @@
   letter-spacing: 0.09em;
   text-align: center;
   text-transform: uppercase;
-  color: rgb(var(--color-white));
+  color: var(--color-white);
 
   @include px1124 {
     padding-left: 0;
@@ -113,9 +113,13 @@
   letter-spacing: 0.06em;
   text-decoration: none;
   writing-mode: vertical-rl;
-  color: rgb(var(--color-white));
+  color: var(--color-white);
 
-  @include hover-focus {
+  &:focus {
+    @include outline;
+  }
+
+  @include hover {
     &::after {
       transform: translate(-50%, -10px);
     }

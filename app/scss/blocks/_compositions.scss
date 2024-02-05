@@ -89,11 +89,15 @@
   box-sizing: content-box;
   cursor: pointer;
 
+  &:focus {
+    @include outline;
+  }
+
   @include px1500 {
     display: block;
   }
 }
 
 .compositions__thumb--active {
-  border: 1px solid rgba(var(--color-white) / 20%);
+  border: 1px solid var(--color-white-20);
 }

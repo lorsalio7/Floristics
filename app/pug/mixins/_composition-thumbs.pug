@@ -3,4 +3,4 @@ mixin composition-thumbs(array)
     li.compositions__item
       picture
         source(srcset= item.thumb + ".webp" type="image/webp")
-        img(loading="lazy" src= item.thumb + ".jpg" width="123" height="123" data-full-image= item.big class= item.thumbClass)
+        img(loading="lazy" tabindex="0" src= item.thumb + ".jpg" width="123" height="123" data-full-image= item.big class= item.thumbClass)

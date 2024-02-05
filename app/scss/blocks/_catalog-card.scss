@@ -1,5 +1,5 @@
 .catalog-card {
-  border: 1px solid rgba(var(--color-white) / 20%);
+  border: 1px solid var(--color-white-20);
   padding: 9px;
 }
 
@@ -25,7 +25,7 @@
   line-height: 1.7;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(var(--color-white) / 90%);
+  color: var(--color-white-90);
 }
 
 .catalog-card__link {
@@ -35,10 +35,14 @@
   letter-spacing: 0.15em;
   text-decoration: none;
   text-transform: uppercase;
-  color: rgb(var(--color-white));
+  color: var(--color-white);
   transition: opacity 0.3s ease-in-out;
 
-  @include hover-focus {
+  &:focus {
+    @include outline;
+  }
+
+  @include hover {
     opacity: 0.5;
   }
 }

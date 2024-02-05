@@ -21,7 +21,7 @@
   display: block;
   width: 34px;
   height: 2px;
-  background-color: rgb(var(--color-white));
+  background-color: var(--color-white);
   transform: translate(-50%, -50%);
   transition: background-color var(--timing) ease;
 }
@@ -34,7 +34,7 @@
   display: block;
   width: 34px;
   height: 2px;
-  background-color: rgb(var(--color-white));
+  background-color: var(--color-white);
   transition:
     top var(--timing) var(--timing) ease,
     transform var(--timing) ease;
@@ -48,7 +48,7 @@
   display: block;
   width: 34px;
   height: 2px;
-  background-color: rgb(var(--color-white));
+  background-color: var(--color-white);
   transition:
     top var(--timing) var(--timing) ease,
     transform var(--timing) ease;

@@ -6,7 +6,7 @@
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  color: rgb(var(--color-white));
+  color: var(--color-white);
 }
 
 .section-title::before {
@@ -16,7 +16,7 @@
   bottom: -21px;
   width: 85px;
   height: 2px;
-  background-color: rgb(var(--color-white));
+  background-color: var(--color-white);
   transform: translateX(-50%);
 }
 
@@ -34,7 +34,7 @@
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  color: rgb(var(--color-white));
+  color: var(--color-white);
   opacity: 0.03;
   transform: translateX(7px);
 

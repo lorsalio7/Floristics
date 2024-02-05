@@ -20,12 +20,12 @@
   flex-basis: 348px;
   margin: 15px;
   border-radius: 8px 8px 0 0;
-  box-shadow: 0 4px 50px rgba((var(--color-black)) / 40%);
-  background-color: rgb(var(--color-tamarind-dark));
+  box-shadow: 0 4px 50px var(--color-black-40);
+  background-color: var(--color-tamarind-dark);
 
   @include hover {
     > .gift__card {
-      background-color: rgb(var(--color-charade));
+      background-color: var(--color-charade);
     }
   }
 
@@ -52,7 +52,7 @@
   background-image: url("../img/gift-card-decor-top-left.svg"), url("../img/gift-card-decor-bottom-right.svg");
   background-position: top 10px left 10px, bottom 10px right 10px;
   background-repeat: no-repeat;
-  background-color: rgb(var(--color-woodsmoke));
+  background-color: var(--color-woodsmoke);
   transition: background-color 0.3s ease-in-out;
 
   @include px1124 {
@@ -116,7 +116,7 @@
   margin-left: 10px;
   font-size: 21px;
   letter-spacing: 0.06em;
-  color: rgb(var(--color-white));
+  color: var(--color-white);
 }
 
 .gift__number {
@@ -127,7 +127,7 @@
   margin-bottom: 0;
   font-size: 21px;
   letter-spacing: 0.06em;
-  color: rgb(var(--color-white));
+  color: var(--color-white);
 }
 
 .gift__text {
@@ -173,7 +173,7 @@
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
-  color: rgb(var(--color-white));
+  color: var(--color-white);
 
   @include px1124 {
     margin-bottom: 128px;
