@@ -11,7 +11,7 @@
   padding: 0;
   max-width: 1300px;
 
-  @include px1500 {
+  @include max-xl {
     max-width: 1200px;
   }
 }
@@ -19,7 +19,7 @@
 .suppliers__item {
   margin: 17px;
 
-  @include px375 {
+  @include max-xss {
     margin: 10px 0;
   }
 }
@@ -34,7 +34,7 @@
 }
 
 .suppliers__image {
-  @include px1500 {
+  @include max-xl {
     width: 268px;
     height: 90px;
     object-fit: contain;

@@ -4,7 +4,7 @@
 }
 
 .catalog-card__image {
-  @include px450 {
+  @include max-xs {
     height: auto;
     object-fit: contain;
   }

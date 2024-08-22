@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
 
-  @include px1124 {
+  @include max-lg {
     flex-direction: column;
     margin: 0 auto;
     max-width: 750px;
@@ -21,7 +21,7 @@
   margin-right: 73px;
   max-width: 400px;
 
-  @include px1124 {
+  @include max-lg {
     flex-shrink: 1;
     margin-right: 0;
     margin-bottom: 70px;
@@ -41,11 +41,11 @@
   text-transform: uppercase;
   color: var(--color-white);
 
-  @include px1124 {
+  @include max-lg {
     font-size: 40px;
   }
 
-  @include px450 {
+  @include max-xs {
     font-size: 36px;
   }
 }
@@ -71,7 +71,7 @@
 }
 
 .promo__button {
-  @include px1124 {
+  @include max-lg {
     text-align: center;
   }
 }
@@ -83,7 +83,7 @@
   margin-right: 20px;
   line-height: 0;
 
-  @include px1124 {
+  @include max-lg {
     flex-grow: 1;
   }
 }

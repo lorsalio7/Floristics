@@ -5,12 +5,12 @@
   padding-top: 7px;
   max-width: 620px;
 
-  @include px1500 {
+  @include max-xl {
     flex-shrink: 1.6;
     margin-left: 40px;
   }
 
-  @include px1124 {
+  @include max-lg {
     margin-bottom: 20px;
     margin-left: 0;
     max-width: 100%;
@@ -26,11 +26,11 @@
   display: inline-block;
   margin-bottom: 99px;
 
-  @include px1500 {
+  @include max-xl {
     margin-bottom: 50px;
   }
 
-  @include px1124 {
+  @include max-lg {
     display: block;
     text-align: center;
   }
@@ -43,7 +43,7 @@
   margin: 0;
   padding-left: 0;
 
-  @include px1124 {
+  @include max-lg {
     justify-content: center;
   }
 }
@@ -52,7 +52,7 @@
   margin-right: 14px;
   margin-bottom: 14px;
 
-  @include px600 {
+  @include max-sm {
     margin-right: 4px;
     margin-bottom: 4px;
   }
@@ -64,18 +64,18 @@
   height: 123px;
   line-height: 0;
 
-  @include px1500 {
+  @include max-xl {
     width: 100px;
     height: 100px;
   }
 
-  @include px600 {
+  @include max-sm {
     margin: 4px;
     width: 80px;
     height: 80px;
   }
 
-  @include px450 {
+  @include max-xs {
     width: 70px;
     height: 70px;
   }
@@ -93,7 +93,7 @@
     @include outline;
   }
 
-  @include px1500 {
+  @include max-xl {
     display: block;
   }
 }

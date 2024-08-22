@@ -50,15 +50,15 @@
   padding-bottom: 157px;
   text-align: center;
 
-  @include px600 {
+  @include max-sm {
     margin-top: 48px;
   }
 
-  @include px450 {
+  @include max-xs {
     padding-bottom: 200px;
   }
 
-  @include px375 {
+  @include max-xss {
     padding-bottom: 150px;
   }
 }
@@ -76,25 +76,25 @@
   text-transform: uppercase;
   color: var(--color-white);
 
-  @include px1124 {
+  @include max-lg {
     padding-left: 0;
     font-size: 90px;
   }
 
-  @include px768 {
+  @include max-md {
     font-size: 70px;
   }
 
-  @include px600 {
+  @include max-sm {
     margin-bottom: 40px;
     font-size: 50px;
   }
 
-  @include px450 {
+  @include max-xs {
     font-size: 40px;
   }
 
-  @include px375 {
+  @include max-xss {
     font-size: 38px;
     letter-spacing: 0.03em;
   }
@@ -125,7 +125,7 @@
     }
   }
 
-  @include px450 {
+  @include max-xs {
     padding-bottom: 40px;
     font-size: 16px;
   }

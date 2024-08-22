@@ -38,30 +38,30 @@
   opacity: 0.03;
   transform: translateX(7px);
 
-  @include px1500 {
+  @include max-xl {
     font-size: 150px;
     line-height: 160px;
   }
 
-  @include px1124 {
+  @include max-lg {
     bottom: -128px;
     font-size: 100px;
     line-height: 110px;
   }
 
-  @include px768 {
+  @include max-md {
     bottom: -112px;
     font-size: 70px;
     line-height: 80px;
   }
 
-  @include px600 {
+  @include max-sm {
     bottom: -100px;
     font-size: 50px;
     line-height: 60px;
   }
 
-  @include px450 {
+  @include max-xs {
     bottom: -96px;
     font-size: 36px;
     line-height: 50px;

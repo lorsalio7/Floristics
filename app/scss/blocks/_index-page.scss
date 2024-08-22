@@ -6,7 +6,7 @@
 .index-page__hero {
   margin-bottom: 100px;
 
-  @include px600 {
+  @include max-sm {
     margin-bottom: 70px;
   }
 }
@@ -15,15 +15,15 @@
   margin-bottom: 177px;
   padding-top: 35px;
 
-  @include px1124 {
+  @include max-lg {
     margin-bottom: 120px;
   }
 
-  @include px768 {
+  @include max-md {
     margin-bottom: 100px;
   }
 
-  @include px450 {
+  @include max-xs {
     margin-bottom: 70px;
   }
 }
@@ -32,7 +32,7 @@
   margin-bottom: 233px;
   padding-top: 35px;
 
-  @include px1124 {
+  @include max-lg {
     margin-bottom: 140px;
   }
 }
@@ -41,7 +41,7 @@
   margin-bottom: 211px;
   padding-top: 35px;
 
-  @include px1124 {
+  @include max-lg {
     margin-bottom: 140px;
   }
 }
@@ -50,7 +50,7 @@
   margin-bottom: 221px;
   padding-top: 35px;
 
-  @include px1124 {
+  @include max-lg {
     margin-bottom: 140px;
   }
 }
@@ -59,7 +59,7 @@
   margin-bottom: 178px;
   padding-top: 35px;
 
-  @include px1124 {
+  @include max-lg {
     margin-bottom: 140px;
   }
 }

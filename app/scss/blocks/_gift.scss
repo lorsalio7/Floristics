@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
 
-  @include px1124 {
+  @include max-lg {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -29,11 +29,11 @@
     }
   }
 
-  @include px1124 {
+  @include max-lg {
     flex-basis: 420px;
   }
 
-  @include px450 {
+  @include max-xs {
     margin: 15px 0;
   }
 }
@@ -55,15 +55,15 @@
   background-color: var(--color-woodsmoke);
   transition: background-color 0.3s ease-in-out;
 
-  @include px1124 {
+  @include max-lg {
     min-height: 264px;
   }
 
-  @include px450 {
+  @include max-xs {
     min-height: 246px;
   }
 
-  @include px375 {
+  @include max-xss {
     min-height: 210px;
     background-size: 100px;
   }
@@ -72,11 +72,11 @@
 .gift__item--big .gift__card {
   min-height: 264px;
 
-  @include px450 {
+  @include max-xs {
     min-height: 246px;
   }
 
-  @include px375 {
+  @include max-xss {
     min-height: 210px;
   }
 }
@@ -87,12 +87,12 @@
   width: 198px;
   height: 61px;
 
-  @include px1124 {
+  @include max-lg {
     width: 240px;
     height: 74px;
   }
 
-  @include px375 {
+  @include max-xss {
     width: 198px;
     height: 61px;
   }
@@ -102,7 +102,7 @@
   width: 240px;
   height: 74px;
 
-  @include px375 {
+  @include max-xss {
     width: 198px;
     height: 61px;
   }
@@ -141,15 +141,15 @@
   background-repeat: no-repeat;
   background-origin: content-box;
 
-  @include px1124 {
+  @include max-lg {
     padding: 99px 20px;
   }
 
-  @include px450 {
+  @include max-xs {
     padding: 50px 20px;
   }
 
-  @include px375 {
+  @include max-xss {
     padding: 40px 20px;
   }
 }
@@ -157,11 +157,11 @@
 .gift__item--big .gift__text {
   padding: 99px 20px;
 
-  @include px450 {
+  @include max-xs {
     padding: 50px 20px;
   }
 
-  @include px375 {
+  @include max-xss {
     padding: 40px 20px;
   }
 }
@@ -175,11 +175,11 @@
   text-align: center;
   color: var(--color-white);
 
-  @include px1124 {
+  @include max-lg {
     margin-bottom: 128px;
   }
 
-  @include px375 {
+  @include max-xss {
     margin-bottom: 100px;
   }
 }
@@ -187,7 +187,7 @@
 .gift__item--big .gift__description {
   margin-bottom: 128px;
 
-  @include px375 {
+  @include max-xss {
     margin-bottom: 100px;
   }
 }

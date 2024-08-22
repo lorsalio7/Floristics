@@ -9,7 +9,7 @@
   background-color: transparent;
   cursor: pointer;
 
-  @include px1124 {
+  @include max-lg {
     display: block;
   }
 }

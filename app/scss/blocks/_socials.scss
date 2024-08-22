@@ -21,7 +21,7 @@
 }
 
 .footer__socials .socials__item:not(:last-of-type) {
-  @include px600 {
+  @include max-sm {
     margin-right: 25px;
   }
 }

@@ -8,7 +8,7 @@
   margin: 0 auto;
   padding: 0;
 
-  @include px450 {
+  @include max-xs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
