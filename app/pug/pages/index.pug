@@ -5,6 +5,9 @@ block vars
   - var htmlClass = "";
   - var bodyClass = "index-page";
 
+block prepend styles
+  link(rel="stylesheet", href="css/aos.css")
+
 block content
   main.index-page__main
     h1.visually-hidden Сайт цветочного магазина - Весна всегда
@@ -17,5 +20,6 @@ block content
 
 
 block prepend scripts
+  script(src="js/aos.js")
   script(src="js/smooth-scroll.polyfills.min.js")
   script(src="js/masonry.pkgd.min.js")

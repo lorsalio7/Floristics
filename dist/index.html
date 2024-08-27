@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Весна всегда - цветочный магазин</title>
     <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="preload" href="fonts/ForumRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
@@ -32,21 +33,21 @@
       <section class="hero index-page__hero">
         <div class="container hero__container">
           <div class="hero__main-content">
-            <h2 class="hero__title">Флористика с душой</h2><a class="button button--dark" href="#">Смотреть работы</a>
+            <h2 class="hero__title" data-aos="fade-up" data-aos-duration="1000">Флористика с душой</h2><a class="button button--dark" href="#" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">Смотреть работы</a>
           </div>
-          <ul class="socials socials--column hero__socials">
+          <ul class="socials socials--column hero__socials" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">
             <li class="socials__item"><a class="socials__link socials__link--tiktok" href="#" title="Мы в Тик-Токе"></a></li>
             <li class="socials__item"><a class="socials__link socials__link--ok" href="#" title="Мы в Одноклассниках"></a></li>
             <li class="socials__item"><a class="socials__link socials__link--telegram" href="#" title="Мы в Телеграм"></a></li>
             <li class="socials__item"><a class="socials__link socials__link--vk" href="#" title="Мы в Вконтакте"></a></li>
-          </ul><a class="hero__link" href="#catalog">смотреть каталог</a>
+          </ul><a class="hero__link" href="#catalog" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">смотреть каталог</a>
         </div>
       </section>
       <section class="catalog index-page__catalog" id="catalog">
         <div class="container">
-          <h2 class="section-title catalog__title" data-title="Каталог услуг">Каталог услуг</h2>
+          <h2 class="section-title catalog__title" data-title="Каталог услуг" data-aos="fade-up" data-aos-duration="1000">Каталог услуг</h2>
           <ol class="catalog__list">
-            <li class="catalog__item">
+            <li class="catalog__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
               <article class="catalog-card">
                 <div class="catalog-card__image-wrapper">
                   <picture>
@@ -58,7 +59,7 @@
                 </div>
               </article>
             </li>
-            <li class="catalog__item">
+            <li class="catalog__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <article class="catalog-card">
                 <div class="catalog-card__image-wrapper">
                   <picture>
@@ -70,7 +71,7 @@
                 </div>
               </article>
             </li>
-            <li class="catalog__item">
+            <li class="catalog__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
               <article class="catalog-card">
                 <div class="catalog-card__image-wrapper">
                   <picture>
@@ -82,7 +83,7 @@
                 </div>
               </article>
             </li>
-            <li class="catalog__item">
+            <li class="catalog__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
               <article class="catalog-card">
                 <div class="catalog-card__image-wrapper">
                   <picture>
@@ -94,7 +95,7 @@
                 </div>
               </article>
             </li>
-            <li class="catalog__item">
+            <li class="catalog__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200">
               <article class="catalog-card">
                 <div class="catalog-card__image-wrapper">
                   <picture>
@@ -106,7 +107,7 @@
                 </div>
               </article>
             </li>
-            <li class="catalog__item">
+            <li class="catalog__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
               <article class="catalog-card">
                 <div class="catalog-card__image-wrapper">
                   <picture>
@@ -118,7 +119,7 @@
                 </div>
               </article>
             </li>
-            <li class="catalog__item">
+            <li class="catalog__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1800">
               <article class="catalog-card">
                 <div class="catalog-card__image-wrapper">
                   <picture>
@@ -130,7 +131,7 @@
                 </div>
               </article>
             </li>
-            <li class="catalog__item">
+            <li class="catalog__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="2100">
               <article class="catalog-card">
                 <div class="catalog-card__image-wrapper">
                   <picture>
@@ -148,12 +149,12 @@
       <section class="offer index-page__offer" id="promotions">
         <div class="container">
           <div class="promo">
-            <div class="promo__element-1">
+            <div class="promo__element-1" data-aos="fade-right" data-aos-duration="1000">
               <h2 class="promo__title">Акционные предложения</h2>
               <p class="promo__description">При заказе свадебного предоставляется скидка на букет невесты и бутоньерку в размере 30%</p>
               <div class="promo__button"><a class="button" href="#">Заказать оформление</a></div>
             </div>
-            <div class="promo__element-2">
+            <div class="promo__element-2" data-aos="fade-left" data-aos-duration="1000">
               <picture class="promo__picture">
                 <source srcset="img/offer-image.webp" type="image/webp"><img class="promo__image" loading="lazy" src="img/offer-image.jpg" width="697" height="410" alt="Скидка на букет невесты и бутоньерку">
               </picture>
@@ -164,7 +165,7 @@
       <section class="compositions index-page__compositions" id="compositions">
         <div class="container">
           <div class="promo promo--reverse">
-            <div class="promo__element-1 compositions__element-1">
+            <div class="promo__element-1 compositions__element-1" data-aos="fade-left" data-aos-duration="1000">
               <h2 class="promo__title">композиции и шляпные коробки</h2>
               <p class="promo__description compositions__description">Композиции могут собираться в любой таре: корзинке, шляпной коробке, вазочке или декоративных ящиках. Их нет необходимости ставить в вазу, как букеты, потому что цветы питаются при помощи специальной флористической губки под названием оазис.<br> Композиции очень удобные для подарка, или оформления мероприятия.</p>
               <div class="compositions__button"><a class="button" href="#">Заказать</a></div>
@@ -191,7 +192,7 @@
                 </li>
               </ul>
             </div>
-            <div class="promo__element-2 compositions__element-2">
+            <div class="promo__element-2 compositions__element-2" data-aos="fade-right" data-aos-duration="1000">
               <picture class="promo__picture compositions__picture">
                 <source srcset="img/composition-1.webp" type="image/webp"><img class="promo__image" loading="lazy" src="img/composition-1.jpg" width="996" height="855" alt="Композиции и шляпные коробки">
               </picture>
@@ -201,9 +202,9 @@
       </section>
       <section class="gift index-page__gift" id="gift-cards">
         <div class="container">
-          <h2 class="section-title gift__title">Подарочные карты</h2>
+          <h2 class="section-title gift__title" data-aos="fade-up" data-aos-duration="1000">Подарочные карты</h2>
           <ul class="gift__list">
-            <li class="gift__item">
+            <li class="gift__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <div class="gift__card"><img class="logo__icon gift__icon" src="img/logo.svg" width="135" height="44" alt="Логотип сайта - Весна всегда"/>
                 <p class="gift__price">3 000</p>
                 <p class="gift__number">328572915</p>
@@ -213,7 +214,7 @@
                 <div class="gift__button"><a class="button" href="#">Получить</a></div>
               </div>
             </li>
-            <li class="gift__item gift__item--big">
+            <li class="gift__item gift__item--big" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
               <div class="gift__card"><img class="logo__icon gift__icon" src="img/logo.svg" width="135" height="44" alt="Логотип сайта - Весна всегда"/>
                 <p class="gift__price">10 000</p>
                 <p class="gift__number">368236061</p>
@@ -223,7 +224,7 @@
                 <div class="gift__button"><a class="button" href="#">Получить</a></div>
               </div>
             </li>
-            <li class="gift__item">
+            <li class="gift__item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
               <div class="gift__card"><img class="logo__icon gift__icon" src="img/logo.svg" width="135" height="44" alt="Логотип сайта - Весна всегда"/>
                 <p class="gift__price">6 000</p>
                 <p class="gift__number">374678982</p>
@@ -238,8 +239,8 @@
       </section>
       <section class="suppliers index-page__suppliers" id="partners">
         <div class="container">
-          <h2 class="section-title suppliers__title">Наши поставщики</h2>
-          <ul class="suppliers__list">
+          <h2 class="section-title suppliers__title" data-aos="fade-up" data-aos-duration="1000">Наши поставщики</h2>
+          <ul class="suppliers__list" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
             <li class="suppliers__item"><a class="suppliers__link" href="#">
                 <picture class="suppliers__picture">
                   <source srcset="img/supplier-1.webp" type="image/webp"/><img class="suppliers__image" loading="lazy" src="img/supplier-1.jpg" width="370" height="122" alt="Гладиолус"/>
@@ -299,6 +300,7 @@
         </ul>
       </div>
     </footer>
+    <script src="js/aos.js"></script>
     <script src="js/smooth-scroll.polyfills.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/focus-visible.min.js" defer></script>

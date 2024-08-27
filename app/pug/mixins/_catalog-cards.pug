@@ -1,11 +1,13 @@
 mixin catalog-cards(array)
+  - var delay = 0
   each item in array
-    li.catalog__item
-      article.catalog-card
-        .catalog-card__image-wrapper
-          picture
-            source(srcset= item.imageSource + ".webp" type="image/webp")
-            img(loading="lazy" src= item.imageSource + ".jpg" width= item.imageWidth height= item.imageHeight alt= item.cardTitle).catalog-card__image
-        .catalog-card__description
-          h3.catalog-card__title= item.cardTitle
-          a(href= item.cardLink).catalog-card__link смотреть
+      li(data-aos="fade-up" data-aos-duration="1000" data-aos-delay=`${delay}`).catalog__item
+        article.catalog-card
+          .catalog-card__image-wrapper
+            picture
+              source(srcset= item.imageSource + ".webp" type="image/webp")
+              img(loading="lazy" src= item.imageSource + ".jpg" width= item.imageWidth height= item.imageHeight alt= item.cardTitle).catalog-card__image
+          .catalog-card__description
+            h3.catalog-card__title= item.cardTitle
+            a(href= item.cardLink).catalog-card__link смотреть
+      - delay += 300

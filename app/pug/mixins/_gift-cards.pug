@@ -1,6 +1,7 @@
 mixin giftCard(array)
+  - var delay = 300
   each item in array
-    li.gift__item(class= item.cardAddClass)
+    li.gift__item(data-aos="fade-up" data-aos-duration="1000" data-aos-delay=`${delay}` class= item.cardAddClass)
       .gift__card
         img(src="img/logo.svg" width="135" height="44", alt="Логотип сайта - Весна всегда").logo__icon.gift__icon
         p.gift__price= item.cardPrice
@@ -9,3 +10,4 @@ mixin giftCard(array)
         p.gift__description= item.cardDescription
         .gift__button
           a(href= item.cardUrl).button Получить
+    - delay += 300
