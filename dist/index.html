@@ -7,7 +7,7 @@
     <title>Весна всегда - цветочный магазин</title>
     <meta name="description" content="Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.">
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="preload" href="css/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="fonts/ForumRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/styles.min.css">
   </head>
@@ -174,22 +174,22 @@
               <ul class="compositions__list">
                 <li class="compositions__item">
                   <picture>
-                    <source srcset="img/composition-1-thumb.webp" type="image/webp"/><img class="compositions__thumb compositions__thumb--active" loading="lazy" tabindex="0" src="img/composition-1-thumb.jpg" width="123" height="123" data-full-image="img/composition-1"/>
+                    <source srcset="img/composition-1-thumb.webp" type="image/webp"/><img class="compositions__thumb compositions__thumb--active" loading="lazy" tabindex="0" src="img/composition-1-thumb.jpg" width="123" height="123" data-full-image="img/composition-1" alt="Превью изображения цветочной композиции - 1"/>
                   </picture>
                 </li>
                 <li class="compositions__item">
                   <picture>
-                    <source srcset="img/composition-2-thumb.webp" type="image/webp"/><img class="compositions__thumb" loading="lazy" tabindex="0" src="img/composition-2-thumb.jpg" width="123" height="123" data-full-image="img/composition-2"/>
+                    <source srcset="img/composition-2-thumb.webp" type="image/webp"/><img class="compositions__thumb" loading="lazy" tabindex="0" src="img/composition-2-thumb.jpg" width="123" height="123" data-full-image="img/composition-2" alt="Превью изображения цветочной композиции - 2"/>
                   </picture>
                 </li>
                 <li class="compositions__item">
                   <picture>
-                    <source srcset="img/composition-3-thumb.webp" type="image/webp"/><img class="compositions__thumb" loading="lazy" tabindex="0" src="img/composition-3-thumb.jpg" width="123" height="123" data-full-image="img/composition-3"/>
+                    <source srcset="img/composition-3-thumb.webp" type="image/webp"/><img class="compositions__thumb" loading="lazy" tabindex="0" src="img/composition-3-thumb.jpg" width="123" height="123" data-full-image="img/composition-3" alt="Превью изображения цветочной композиции - 3"/>
                   </picture>
                 </li>
                 <li class="compositions__item">
                   <picture>
-                    <source srcset="img/composition-4-thumb.webp" type="image/webp"/><img class="compositions__thumb" loading="lazy" tabindex="0" src="img/composition-4-thumb.jpg" width="123" height="123" data-full-image="img/composition-4"/>
+                    <source srcset="img/composition-4-thumb.webp" type="image/webp"/><img class="compositions__thumb" loading="lazy" tabindex="0" src="img/composition-4-thumb.jpg" width="123" height="123" data-full-image="img/composition-4" alt="Превью изображения цветочной композиции - 4"/>
                   </picture>
                 </li>
               </ul>
@@ -302,10 +302,10 @@
         </ul>
       </div>
     </footer>
-    <script src="js/aos.js"></script>
-    <script src="js/smooth-scroll.polyfills.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/aos.js" defer></script>
+    <script src="js/smooth-scroll.polyfills.min.js" defer></script>
+    <script src="js/masonry.pkgd.min.js" defer></script>
     <script src="js/focus-visible.min.js" defer></script>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.min.js" defer></script>
   </body>
 </html>
