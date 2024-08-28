@@ -1,7 +1,8 @@
 header.header
   .container.header__container
-    a.logo.header__logo
-      img(src="img/logo.svg" width="135" height="44", alt="Логотип сайта - Весна всегда").logo__icon
+    .header__logo
+      a(href="/").logo
+        img(src="img/logo.svg" width="135" height="44", alt="Логотип сайта - Весна всегда").logo__icon
     .mobile-menu
       nav.site-navigation.header__site-navigation
         +site-navigation(pugData.siteNavigation)

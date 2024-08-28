@@ -741,7 +741,7 @@ img {
 }
 
 .logo__icon {
-  display: block;
+  display: inline-block;
   width: 135px;
   height: 44px;
 }
