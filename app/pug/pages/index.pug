@@ -2,6 +2,7 @@ extends ../layout/main-template.pug
 
 block vars
   - var pageTitle = "Весна всегда - цветочный магазин";
+  - var pageDescription = "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.";
   - var htmlClass = "";
   - var bodyClass = "index-page";
 
@@ -17,7 +18,6 @@ block content
     include ../includes/_compositions.pug
     include ../includes/_gift.pug
     include ../includes/_suppliers.pug
-
 
 block prepend scripts
   script(src="js/aos.js")
