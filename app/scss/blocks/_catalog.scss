@@ -23,7 +23,7 @@
 }
 
 .catalog__item::before {
-  content: "0" counter(list-counter) url("../img/counter-dash.svg");
+  content: "0" counter(list-counter) url("../img/decor/counter-dash.svg");
   position: absolute;
   left: 33px;
   top: 51px;

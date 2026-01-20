@@ -45,56 +45,56 @@
   ],
   "catalogCards": [
     {
-      "imageSource": "img/wedding-bouquet",
+      "imageSource": "img/content/service-catalog/wedding-bouquet",
       "imageWidth": "330",
       "imageHeight": "223",
       "cardTitle": "Букет невесты и свадебное оформление",
       "cardLink": "#"
     },
     {
-      "imageSource": "img/celebration-bouquet",
+      "imageSource": "img/content/service-catalog/celebration-bouquet",
       "imageWidth": "330",
       "imageHeight": "610",
       "cardTitle": "Букеты на торжества",
       "cardLink": "#"
     },
     {
-      "imageSource": "img/compositions",
+      "imageSource": "img/content/service-catalog/compositions",
       "imageWidth": "330",
       "imageHeight": "370",
       "cardTitle": "Композиции",
       "cardLink": "#"
     },
     {
-      "imageSource": "img/event-design",
+      "imageSource": "img/content/service-catalog/event-design",
       "imageWidth": "330",
       "imageHeight": "146",
       "cardTitle": "Оформление мероприятий",
       "cardLink": "#"
     },
     {
-      "imageSource": "img/flower-delivery",
+      "imageSource": "img/content/service-catalog/flower-delivery",
       "imageWidth": "330",
       "imageHeight": "245",
       "cardTitle": "Доставка цветов",
       "cardLink": "#"
     },
     {
-      "imageSource": "img/packaging-and-accessories",
+      "imageSource": "img/content/service-catalog/packaging-and-accessories",
       "imageWidth": "330",
       "imageHeight": "146",
       "cardTitle": "Упаковка и аксессуары",
       "cardLink": "#"
     },
     {
-      "imageSource": "img/photo-shoot-in-the-greenhouse",
+      "imageSource": "img/content/service-catalog/photo-shoot-in-the-greenhouse",
       "imageWidth": "330",
       "imageHeight": "146",
       "cardTitle": "Фотосессии в нашей оранжерее",
       "cardLink": "#"
     },
     {
-      "imageSource": "img/floristry-courses",
+      "imageSource": "img/content/service-catalog/floristry-courses",
       "imageWidth": "330",
       "imageHeight": "370",
       "cardTitle": "Курсы по флористике",
@@ -103,23 +103,23 @@
   ],
   "compositionThumbs": [
     {
-      "big": "img/composition-1",
-      "thumb": "img/composition-1-thumb",
+      "big": "img/content/composition/composition-1",
+      "thumb": "img/content/composition/composition-1-thumb",
       "thumbClass": "compositions__thumb compositions__thumb--active"
     },
     {
-      "big": "img/composition-2",
-      "thumb": "img/composition-2-thumb",
+      "big": "img/content/composition/composition-2",
+      "thumb": "img/content/composition/composition-2-thumb",
       "thumbClass": "compositions__thumb"
     },
     {
-      "big": "img/composition-3",
-      "thumb": "img/composition-3-thumb",
+      "big": "img/content/composition/composition-3",
+      "thumb": "img/content/composition/composition-3-thumb",
       "thumbClass": "compositions__thumb"
     },
     {
-      "big": "img/composition-4",
-      "thumb": "img/composition-4-thumb",
+      "big": "img/content/composition/composition-4",
+      "thumb": "img/content/composition/composition-4-thumb",
       "thumbClass": "compositions__thumb"
     }
   ],
@@ -149,63 +149,63 @@
   "suppliers": [
     {
       "link": "#",
-      "imageUrl": "img/supplier-1",
+      "imageUrl": "img/common/supplier/supplier-1",
       "imageWidth": "370",
       "imageHeight": "122",
       "imageName": "Гладиолус"
     },
     {
       "link": "#",
-      "imageUrl": "img/supplier-2",
+      "imageUrl": "img/common/supplier/supplier-2",
       "imageWidth": "370",
       "imageHeight": "122",
       "imageName": "European Flowers"
     },
     {
       "link": "#",
-      "imageUrl": "img/supplier-3",
+      "imageUrl": "img/common/supplier/supplier-3",
       "imageWidth": "370",
       "imageHeight": "122",
       "imageName": "First Roses"
     },
     {
       "link": "#",
-      "imageUrl": "img/supplier-4",
+      "imageUrl": "img/common/supplier/supplier-4",
       "imageWidth": "571",
       "imageHeight": "190",
       "imageName": "Sakura"
     },
     {
       "link": "#",
-      "imageUrl": "img/supplier-5",
+      "imageUrl": "img/common/supplier/supplier-5",
       "imageWidth": "571",
       "imageHeight": "190",
       "imageName": "Розы из Эквадора"
     },
     {
       "link": "#",
-      "imageUrl": "img/supplier-6",
+      "imageUrl": "img/common/supplier/supplier-6",
       "imageWidth": "268",
       "imageHeight": "90",
       "imageName": "Первый цветочный"
     },
     {
       "link": "#",
-      "imageUrl": "img/supplier-7",
+      "imageUrl": "img/common/supplier/supplier-7",
       "imageWidth": "268",
       "imageHeight": "90",
       "imageName": "Цветы мира"
     },
     {
       "link": "#",
-      "imageUrl": "img/supplier-8",
+      "imageUrl": "img/common/supplier/supplier-8",
       "imageWidth": "268",
       "imageHeight": "90",
       "imageName": "Start Logistic"
     },
     {
       "link": "#",
-      "imageUrl": "img/supplier-9",
+      "imageUrl": "img/common/supplier/supplier-9",
       "imageWidth": "268",
       "imageHeight": "90",
       "imageName": "Фотостудия №1"

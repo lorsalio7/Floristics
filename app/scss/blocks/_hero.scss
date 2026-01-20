@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 242px;
   padding-bottom: 150px;
-  background-image: url("../img/hero-bg-bottom.png"), url("../img/hero-bg.jpg");
+  background-image: url("../img/backgrounds/hero-bg-bottom.png"), url("../img/backgrounds/hero-bg.jpg");
   background-position: 0 bottom, center top;
   background-size: 100% 75px, cover;
   background-repeat: repeat-x, no-repeat;
@@ -15,7 +15,7 @@
   bottom: 150px;
   width: 38px;
   height: 58px;
-  background-image: url("../img/mouse-ic.svg");
+  background-image: url("../img/icons/mouse-ic.svg");
   background-position: center;
   background-size: 36px 56px;
   background-repeat: no-repeat;
@@ -139,7 +139,7 @@
   display: block;
   width: 15px;
   height: 21px;
-  background-image: url("../img/arrow-bottom.svg");
+  background-image: url("../img/icons/arrow-bottom.svg");
   background-position: center bottom;
   background-repeat: no-repeat;
   transform: translate(-50%, 0);
